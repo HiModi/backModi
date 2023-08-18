@@ -25,9 +25,18 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+// 20230817
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 	compileOnly 'org.projectlombok:lombok'
+// 20230817 PostgreSQL 설치
+	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+//	20230818 hibernate 쿼리 파라미터 로그 남기기
+//	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.6'
 
 
 }
