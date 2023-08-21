@@ -12,9 +12,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@Getter
+@NoArgsConstructor
 @Entity
+@Getter
 @Table(name = "tb_user")
 @DynamicUpdate
 public class User {
@@ -30,4 +30,7 @@ public class User {
     @Setter
     @Column(name ="name")
     private String name;
+
+
+
 }

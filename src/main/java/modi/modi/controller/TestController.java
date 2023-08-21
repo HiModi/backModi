@@ -1,10 +1,11 @@
 package modi.modi.controller;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
 @RequestMapping
+@RestController
 public class TestController {
 
     @GetMapping("/value1")
